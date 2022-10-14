@@ -1,2 +1,2 @@
 # python-fundamentals
-example code on the training Python Fundamentals by Peter Kassenaar
+example code on the training `Python Fundamentals` by Peter Kassenaar
