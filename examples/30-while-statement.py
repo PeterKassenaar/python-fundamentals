@@ -4,7 +4,7 @@
 i = 0
 while i <= 10:
     print(i)
-    i = i + 1 # or shorthand notation: i += 1
+    # i = i + 1 # or shorthand notation: i += 1
 print ('Variable i is now 10. The loop has ended')
 
 # We have a infinte loop on purpose. It
@@ -32,5 +32,5 @@ print ('Variable i is now 10. The loop has ended')
 #     total += int(number)
 #     if(int(number) == 0):
 #         break
-# print('The total of these number is: ' + str(total))
+# print('The total of these numbers is: ' + str(total))
 
