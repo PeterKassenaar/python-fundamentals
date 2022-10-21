@@ -67,6 +67,6 @@ print(newCompanies)  # create a copy, original list companies untouched
 
 reversedCompanies = reversed(companies)
 print(list(reversedCompanies))  # create a copy, original list companies untouched
-# (we use the list() constructor because reversed() returns an iterator
-# of type <list_reverseiterator object at 0x00000202DA46B670>. We will cover
-# iterators later)
+
+# (we use the list() constructor because reversed() returns an 'iterator'
+# of type <list_reverseiterator object at 0x00000202DA46B670>.)
