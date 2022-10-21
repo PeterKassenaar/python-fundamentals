@@ -60,13 +60,28 @@ age = 12
 # companies.reverse()
 # print(companies) # ['microsoft', 'intel', 'google', 'facebook', 'apple']
 
-# Creating a new, sorted list (instead of sorting in place)
-companies = ['intel', 'microsoft', 'apple', 'google', 'facebook']
-newCompanies = sorted(companies)
-print(newCompanies)  # create a copy, original list companies untouched
+# # 4a. Creating a new, sorted list (instead of sorting in place)
+# companies = ['intel', 'microsoft', 'apple', 'google', 'facebook']
+# newCompanies = sorted(companies)
+# print(newCompanies)  # create a copy, original list companies untouched
 
-reversedCompanies = reversed(companies)
-print(list(reversedCompanies))  # create a copy, original list companies untouched
+# reversedCompanies = reversed(companies)
+# print(list(reversedCompanies))  # create a copy, original list companies untouched
 
 # (we use the list() constructor because reversed() returns an 'iterator'
 # of type <list_reverseiterator object at 0x00000202DA46B670>.)
+
+#  
+# ****************
+# 5. Comprehension
+# ****************
+numbers = [1, 2, 3, 4, 5]
+doubled = [2 * i for i in numbers] # instead of writing a for-loop, we double the numbers in one statement
+print (doubled)
+
+# Lets use a list of companies again. We want to know the number of characters of every company:
+companies = ['intel', 'microsoft', 'apple', 'google', 'facebook']
+length = ['{0} has {1} characters'.format(company, len(company)) 
+        for company in companies]
+for item in length:
+    print (item)
