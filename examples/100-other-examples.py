@@ -73,7 +73,7 @@ age = 12
 
 #  
 # ****************
-# 5. Comprehension
+# 5. List Comprehension
 # ****************
 numbers = [1, 2, 3, 4, 5]
 doubled = [2 * i for i in numbers] # instead of writing a for-loop, we double the numbers in one statement
@@ -83,5 +83,20 @@ print (doubled)
 companies = ['intel', 'microsoft', 'apple', 'google', 'facebook']
 length = ['{0} has {1} characters'.format(company, len(company)) 
         for company in companies]
+# for-loop used here for pretty printing. We could have used pprint/pp also
 for item in length:
     print (item)
+
+# ****************
+# 6. Set & Dictionary Comprehension
+# ****************
+
+# ......
+
+# ****************
+# 7. Lambda functions
+# ****************
+
+# ......
+# https://www.youtube.com/watch?v=dX6lWSp7pP4&list=PL98qAXLA6aftqPGddFjJ59m71F96ZPwD4&t=265s
+
