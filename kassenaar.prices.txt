@@ -1,0 +1,11 @@
+Title, Price
+Handboek Outlook 2021, 29.99
+Handboek Windows 11, 29.99
+Handboek  -   Handboek Word 2021, 32.99
+Handboek (X)HTML CSS en JavaScript, 29.99
+Handboek  -   JavaScript 3e editie, 34.99
+Handboek usability, 18.25
+Het Complete Boek Microsoft Office 2019, 64.99
+Het Complete Boek Office 2021, 59.99
+Handboek  -   Handboek JavaScript & jQuery 4e editie, 39.99
+Handboek  -   Handboek Windows 10 2e editie, 25.99

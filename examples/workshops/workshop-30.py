@@ -46,7 +46,7 @@ try:
                     prices[i].attrs['content']
                 ))
                 file.write('{0}, {1}\n'.format(
-                    elements[i].getText(),
+                    elements[i].getText().replace(',', ''), # strip out possible comma's in the title, as we want to save a CSV-like format!
                     prices[i].attrs['content']
                 ))
             # 10. Show confirmation to the user
