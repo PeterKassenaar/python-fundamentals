@@ -1,0 +1,9 @@
+// test file to check the rest-features of an API.
+// It uses the REST Clients extension in VS Code.
+// More info: https://blog.bitsrc.io/vs-codes-rest-client-plugin-is-all-you-need-to-make-api-calls-e9e95fcfd85a
+
+GET http://127.0.0.1:5000/
+
+###
+
+GET http://127.0.0.1:5000/users
