@@ -7,3 +7,18 @@ GET http://127.0.0.1:5000/
 ###
 
 GET http://127.0.0.1:5000/users
+
+###
+GET http://localhost:3333/numbers
+
+###
+// Send data with the request
+GET http://localhost:3333/req?name=Peter&age=11 HTTP/1.1
+###
+GET http://localhost:3333/json HTTP/1.1
+content-type: application/json
+
+{
+    "name": "Sandra",
+    "age": 44
+}

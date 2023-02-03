@@ -13,7 +13,7 @@ try:
 
     # 2. Get the results
     res = requests.get('https://www.bol.com/nl/nl/s/?searchtext=' + keyword)
-    res.raise_for_status() 
+    res.raise_for_status()
 
     # 3. Parse the HTML
     bolcom = bs4.BeautifulSoup(res.text, 'html.parser')
@@ -25,11 +25,11 @@ try:
     print('Number of found items: {}'.format(len(elements)))
 
     # 5. If the search DID NOT return elements, the list with prices is empty.
-    # Check for that. 
-    if prices == []:
+    # Check for that.
+    if prices == []: # (or simply, if not prices:... )
         print('Sorry, could not find results for "{0}"'.format(keyword))
     else:
-        # 6. We have results. Print them to screen and save to file  
+        # 6. We have results. Print them to screen and save to file
         fileName = keyword + '.prices.txt'
         with open(fileName, mode='wt', encoding='utf-8') as file:
             # 7. Use only the first 10 found items/producs. Adjust if you want more.

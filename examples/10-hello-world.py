@@ -4,9 +4,9 @@
 # to execute them.
 print ('Hello World')
 print (2 + 2)
-a = 10;
+a = 10
 print (a)
 if a >= 10:
-    print('a is bigger than, or equal to 10');
+    print('a is bigger than, or equal to 10')
 
 # your additional code here...
