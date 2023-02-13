@@ -1,38 +1,15 @@
-# some tests. This page is not to be used on its own
+#  Lijst met woorden, je wilt de gemiddelde lengte van elk woord weten.
+from statistics import mean
 
-# For working with Excel, install the OpenPyXl module, pip install --user openpyxl.
-# More info at https://openpyxl.readthedocs.io/en/stable/
-
-
-# 0. Imports
-from fileinput import filename
-import openpyxl
-from openpyxl.utils import get_column_letter
-
-# MULTIPLICATION TABLE MAKER, p. 326, 'AUtomate the boring stuff with python', Al Seigwart
-print('opening workbook')
-fileName = 'multiplication-table.xlsx'
-try:
-    wb = openpyxl.Workbook()
-    sheet = wb.active
-
-    print('calculating...')
-    number = 6 # TODO: get this from command line
-    for i in range(1, number + 1):
-        #  First row, print number 1...x
-        sheet.cell(row=1, column=i+1).value= i
-        # second row, print number again, the i * numbers
-        newRow = [i,]
-        # calculate the multiplication number
-        for j in range(1, number+ 1):
-            newRow.append(j * i)
-        # print to the screen, for reference, and add to worksheet
-        print('adding row: ', newRow)
-        sheet.append(newRow)
-
-except Exception as ex:
-    print('ERROR! {0}'.format(ex))
-
-print('closing workbook: ', fileName)
-wb.save(filename=fileName)
-print('Done.')
+woorden = "Het was een koude, donkere winteravond en Jochem vroeg zich af of hij naar huis zou gaan".split()
+# print(words)
+# print ('aantal woorden: ', len(words))
+lengtes = []
+for word in woorden:
+    lengtes.append(len(word))
+    # With comprehension
+# print(lengths)
+# lengtes = [len(woord) for woord in woorden ]
+gemiddelde = mean(lengtes)
+print("Jouw zin: ", woorden)
+print("Gemiddelde woordlengte: ", round(gemiddelde, 1))

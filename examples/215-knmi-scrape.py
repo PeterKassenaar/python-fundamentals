@@ -17,8 +17,8 @@ try:
 
     # 1d. In this case: print the number of elements and text of the first element
     print('num elements: {}'.format(len(elements)))
-    print('text elements: {}'.format(elements[0].getText())) 
-        
+    print('text elements: {}'.format(elements[0].getText()))
+
     # 1e. Some other examples of what we can do with the response bs4-object
     print(knmi.title.getText()) # KNMI - Weer - Verwachtingen
     print(elements[0].attrs) # {'class': ['margin-top-0']}
@@ -27,3 +27,6 @@ try:
 
 except Exception as ex:
     print('Oh no! Something went wrong: ', ex)
+
+
+    #content > div.body > div > ul > li:nth-child(11) > a > span.cell.content > span.title
