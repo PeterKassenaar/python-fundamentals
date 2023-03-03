@@ -30,7 +30,7 @@ try:
         print('Sorry, could not find results for "{0}"'.format(keyword))
     else:
         # 6. We have results. Print them to screen and save to file
-        fileName = keyword + '.prices.txt'
+        fileName = keyword + '_prices.txt'
         with open(fileName, mode='wt', encoding='utf-8') as file:
             # 7. Use only the first 10 found items/producs. Adjust if you want more.
             items = min(10, len(elements))

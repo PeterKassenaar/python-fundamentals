@@ -1,0 +1,31 @@
+Title, Price
+
+Het Complete Boek Office 2021
+, 59.99
+
+web development library  -   Angular
+, 39.99
+
+Handboek Outlook 2021
+, 29.99
+
+Handboek  -   Web Development Library: Vue.js
+, 36.99
+
+Handboek Windows 11
+, 29.99
+
+Het Complete Boek Microsoft Office 2019
+, 64.99
+
+Handboek  -   Handboek JavaScript & jQuery 4e editie
+, 39.99
+
+Web Development Library  -  Bootstrap 4
+, 23.88
+
+Handboek  -   Handboek Word 2019
+, 31.99
+
+Handboek  -   Handboek Word 2021
+, 32.99
